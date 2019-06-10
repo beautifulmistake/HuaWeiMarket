@@ -8,7 +8,7 @@ def get_proxies():
     :return: 代理IP
     """
     # 鹏鹏代理池的接口
-    url = 'http://39.107.59.59/get'
+    url = ''
     # 发送请求获取响应
     results = json.loads(requests.get(url).text)['RESULT']
     print("查看获取的响应：", results)
