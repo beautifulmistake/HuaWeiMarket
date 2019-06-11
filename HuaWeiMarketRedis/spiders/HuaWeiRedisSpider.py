@@ -34,7 +34,7 @@ class HuaWeiMarketSpider(RedisSpider):
         连接redis获取关键字，构造初始的url
         :return:
         """
-        connect = redis.Redis(host='127.0.0.1', port=6379, db=4, password='pengfeiQDS')  # 获取redis的连接
+        connect = redis.Redis(host='127.0.0.1', port=6379, db=4, password='your password if password else None')  # 获取redis的连接
         keyword_total = connect.dbsize()    # 获取关键字总数
         # 遍历获取每一个关键字
         for index in range(360001, 480001):    # 测试时用代码

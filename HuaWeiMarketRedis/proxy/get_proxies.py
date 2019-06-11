@@ -7,7 +7,7 @@ def get_proxies():
     连接API获取付费的代理IP
     :return: 代理IP
     """
-    # 鹏鹏代理池的接口
+    # 代理池的接口
     url = ''
     # 发送请求获取响应
     results = json.loads(requests.get(url).text)['RESULT']
